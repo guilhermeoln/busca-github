@@ -30,7 +30,7 @@ function App() {
       setRepositorios(repositorios.data)
     } catch(err){
       if(err.response.status === 404){
-        toast.warn('Usuário Inválido')
+        toast.warn('Usuário Inválido!')
       }
 
       console.log(err)
