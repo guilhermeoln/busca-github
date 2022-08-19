@@ -1,5 +1,8 @@
 import './style.css';
 import api from './services/api';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
 import { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
 
@@ -26,7 +29,10 @@ function App() {
       setExibirInfo(true);
       setRepositorios(repositorios.data)
     } catch(err){
-      
+      if(err.response.status === 404){
+        toast.warn('Usuário Inválido')
+      }
+
       console.log(err)
     }
   }
@@ -40,6 +46,7 @@ function App() {
 
   return (
     <div className='app'>
+      <ToastContainer autoClose={3000}/>
       <header>
         <FaGithub className='icon'/>
       </header>

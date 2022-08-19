@@ -35,13 +35,17 @@ input{
     border-radius: 2px;
     padding-left: 3px;
     background-color: rgba(46, 46, 46, 0.967);
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
+
 
 button{
     width: 100px;
     margin-left: 5px;
+    border-radius: 2px;
     cursor: pointer;
     color: #FFF;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
 .btn-clear{
@@ -81,6 +85,7 @@ ul{
     max-width: 400px;
     background-color: rgba(46, 46, 46, 0.9);
     border-radius: 1px;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
 }
 
 li{
